@@ -1,0 +1,18 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'include/header.html' %}
+
+{% include 'include/category.html' %}
+{% include 'include/center.html' %}
+{% include 'include/block.html' %}
+<div class="container">
+    <div class="row">
+        {% block main %}
+        {% endblock %}
+        {% include 'include/side.html' %}
+    </div>
+</div>
+
+{% endblock %}

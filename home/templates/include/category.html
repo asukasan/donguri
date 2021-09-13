@@ -1,0 +1,10 @@
+{% load static %}
+<div class="container">
+    <div class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+          {% for c in category %}
+          <a class="p-2 link-secondary" href="{% url 'post:post_category' id=c.id %}">{{c.name}}({{c.post_set.count}})</a>
+          {% endfor %}
+      </nav>
+    </div>
+</div>

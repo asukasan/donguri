@@ -1,0 +1,18 @@
+{% extends 'home/main2.html' %}
+{% load static %}
+{% block main %}
+<div class="col-md-8">
+  {% for p in post_category.post_set.all %}
+  <div style="background-color: #fff;" class="text-center mb-5">
+    <p>{{p.created_at}}</p>
+    <h1 class="pb-4 mb-4 font-italic">
+      <a href="{% url 'post:detail' id=p.id %}">{{p.title}}</a>
+    </h1>
+    {% if p.thumbnail %}
+    <img src="{{ p.thumbnail.url }}" alt="" class="img-fluid mb-3">
+    {% endif %}
+    <p>{{p.heading}}</p>
+  </div>
+{% endfor %}
+</div>
+{% endblock %}

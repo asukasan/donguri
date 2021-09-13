@@ -1,0 +1,17 @@
+{% extends 'home/main2.html' %}
+{% load static %}
+
+{% block main %}
+
+<article class="col-md-8">
+    <div style="background-color: #fff;">
+        <br><br><br><br>
+        <p class="text-center">{{post.created_at}}</p>
+        <h1 class="text-center">{{post.title}}</h1>
+        {% if post.thumbnail %}
+        <img src="{{post.thumbnail.url}}" alt="" class="img-fluid mb-3">
+        {% endif %}
+        <p>{{post.content|safe}}</p>
+    </div>
+</article>
+{% endblock %}
