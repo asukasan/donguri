@@ -81,8 +81,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'donguri_db',
-        'USER': 'ixtab',
-        'PASSWORD': '',
+        'USER': 'root',
+        'PASSWORD': 'Akihiro191',
         'HOST': '',
         'PORT': '',
     }
