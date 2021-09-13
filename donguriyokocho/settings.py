@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'donguri_db',
         'USER': 'ixtab',
-        'HOST': 'host',
+        'HOST': '',
         'PORT': '',
     }
 }
