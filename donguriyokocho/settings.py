@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'donguri_db',
         'USER': 'root',
-        'PASSWORD': 'Akihiro191',
+        'PASSWORD': '',
         'HOST': '',
         'PORT': '',
     }
